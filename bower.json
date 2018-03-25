@@ -1,0 +1,14 @@
+{
+  "name": "videojs-countdown-start",
+  "author": "Pravdina Elena &lt;helenj@inventos.ru&gt;",
+  "license": "MIT",
+  "main": [
+    "dist/videojs-countdown-start.css",
+    "dist/videojs-countdown-start.min.js"
+  ],
+  "keywords": [
+    "videojs",
+    "videojs-plugin"
+  ]
+}
+

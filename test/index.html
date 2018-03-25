@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>videojs-countdown-start Unit Tests</title>
+  <link rel="stylesheet" href="/node_modules/mocha/mocha.css">
+  <link rel="stylesheet" href="/node_modules/video.js/dist/video-js.css">
+  <link href="/dist/videojs-countdown-start.css" rel="stylesheet">
+</head>
+<body>
+  <div id="mocha"></div>
+  <div id="fixture"></div>
+  <script src="/node_modules/mocha/mocha.js"></script>
+  <script src="/node_modules/sinon/pkg/sinon.js"></script>
+  <script src="/node_modules/should/should.js"></script>
+  <script src="/node_modules/should-sinon/should-sinon.js"></script>
+  <script>mocha.setup('bdd');</script>
+  
+  <script src="/node_modules/video.js/dist/video.js"></script>
+  <script src="/test/dist/bundle.js"></script>
+  <script>mocha.run();</script>
+</body>
+</html>

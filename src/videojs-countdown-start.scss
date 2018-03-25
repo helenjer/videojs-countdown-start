@@ -1,0 +1,78 @@
+// Sass for videojs-countdown-start
+
+@mixin vertical-align-middle {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+$bg-color-input: #fff;
+$text-color: #fff;
+$text-color-input: #333;
+$text-color-err: #d21e34;
+
+.video-js {
+	&.vjs-countdown-start {
+		&.vjs-countdown-start-counting {
+			.vjs-big-play-button {
+				display: none;
+			}
+		}
+
+		.vjs-countdown-start-doc {
+			width: 30em;
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0 auto;
+			padding: 1em 1.5em;
+			left: 0;
+			right: 0;
+			color: $text-color;
+			outline: none;
+			overflow: auto;
+
+			@include vertical-align-middle();
+		}
+
+		.vjs-countdown-start-caption {
+			margin-bottom: 0.5em;
+			padding-bottom: 0.3em;
+			border-bottom: 1px solid rgba($text-color, 0.5);
+			font-size: 1.4em;
+			line-height: 1.2em;
+			max-height: 2.6em;
+			overflow: hidden;
+		}
+
+		.vjs-countdown-start-info,
+		.vjs-countdown-start-message {
+			margin-bottom: 0.4em;
+			font-size: 1.1em;
+			line-height: 1.3em;
+			font-style: italic;
+			color: rgba($text-color, 0.7);
+			overflow: hidden;
+		}
+
+		.vjs-countdown-start-message {
+			max-height: 4.4em;
+		}
+
+		.vjs-countdown-start-timer {
+			text-align: center;
+		}
+
+		.vjs-countdown-start-timer-text {
+			font-size: 1.1em;
+		}
+
+		.vjs-countdown-start-timer-val {
+			display: block;
+			margin-top: 0.2em;
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+	}
+}
